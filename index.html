@@ -24,15 +24,15 @@
     <div id="sidenav">
         <nav>
             <ul>
-                <li><a href="#banner">HOME</a></li>
-                <li><a href="#feature">FEATURES</a></li>
-                <li><a href="#service">SERVICES</a></li>
-                <li><a href="#testimonial">TESTIMONIALS</a></li>
-                <li><a href="#footer">MEET US</a></li>
+                <li><a href="#banner" onclick="closeTab()">HOME</a></li>
+                <li><a href="#feature" onclick="closeTab()">FEATURES</a></li>
+                <li><a href="#service" onclick="closeTab()">SERVICES</a></li>
+                <li><a href="#testimonial" onclick="closeTab()">TESTIMONIALS</a></li>
+                <li><a href="#footer" onclick="closeTab()">MEET US</a></li>
             </ul>
         </nav>
     </div>
-    <div id="menubtn">
+    <div id="menubtn" onclick="toggleMenu()">
         <img src="img/menu.png" id="menu">
     </div>
 
@@ -202,21 +202,26 @@
 </section>
 
 <script>
-var menubtn = document.getElementById("menubtn")
 var sidenav = document.getElementById("sidenav")
-var menu = document.getElementById("menu")
 
-sidenav.style.right = "-250px";
-
-menubtn.onclick = function(){
-    if(sidenav.style.right == "-250px"){
-        sidenav.style.right = "0";
-        menu.src = "img/close.png";
+function toggleMenu() {
+   var isClosed = sidenav.style.right === "-250px";
+    if(isClosed) {
+        open()
     }
     else{
+        closeTab()
+    }
+}
+
+function open () {
+        sidenav.style.right = "0";
+        menu.src = "img/close.png";
+}
+
+function closeTab () {
         sidenav.style.right = "-250px";
         menu.src = "img/menu.png";
-    }
 }
 
 var scroll = new SmoothScroll('a[href*="#"]', {
