@@ -1,234 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <title>Barber Portfolio</title>
+  <title>Personal Portfolio Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Template css Files -->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" title="pink" href="css/skins/pink.css" type="text/css" >
+
+  <!--Style Switcher-->
+  <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
+
+  <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
 </head>
 <body>
-    <section id="banner">
-        <img src="img/logo.png" class="logo">
-        <div class="banner-text">
-            <h1>Hair Studio</h1>
-            <p>Style Your Hair is Style Your Life </p>
-            <div class="banner-btn">
-                <a href="#"><span></span>Find Out</a>
-                <a href="#"><span></span>Read More</a>
-            </div>
+
+<div class="main-conteiner">
+    <div class="aside">
+        <div class="nav-toggler">
+            <span></span>
         </div>
-    </section>
-    <div id="sidenav">
-        <nav>
-            <ul>
-                <li><a href="#banner" onclick="closeTab()">HOME</a></li>
-                <li><a href="#feature" onclick="closeTab()">FEATURES</a></li>
-                <li><a href="#service" onclick="closeTab()">SERVICES</a></li>
-                <li><a href="#testimonial" onclick="closeTab()">TESTIMONIALS</a></li>
-                <li><a href="#footer" onclick="closeTab()">MEET US</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="menubtn" onclick="toggleMenu()">
-        <img src="img/menu.png" id="menu">
+        <ul class="nav">
+            <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="#contacts"><i class="fa fa-comments"></i> Contacts</a></li>
+        </ul>
+        <div class="copyright-text">
+            &copy; 2021 The Kolega template
+        </div>
     </div>
 
-<!--Feature-->
-
-<section id="feature">
-    <div class="title-text">
-        <p>FEATURES</p>
-        <h1>Why choose US</h1>
-    </div>
-    <div class="feature-box">
-        <div class="features">
-            <h1>Experienced Staff</h1>
-            <div class="features-desc">
-                <div class="feature-icon">
-                    <i class="fa fa-shield"></i>
-                </div>
-                <div class="feature-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa laudantium totam quibusdam, in blanditiis odio eos ratione. Animi facilis voluptatibus voluptate nisi quam? Saepe dolore quo minima. Libero, quia.</p>
+    <div class="main-content">
+        <section class="home  section active" id="home">
+            <div class="container">
+                <div class="intro">
+                    <img src="images/about.jpg" alt="Profile" class="shadow-dark">
+                    <h1>Koleganov Kostya</h1>
+                    <p>I'm a Front-end Developer</p>
+                    <div class="social-links">
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/koleganov_k/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
-            <h1>Pre Booking Online</h1>
-            <div class="features-desc">
-                <div class="feature-icon">
-                    <i class="fa fa-check-square-o"></i>
+        </section>
+        <!-- Home section end-->
+
+        <section class="about  section " id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I'm Koleganov Kostya and <span>Front-end Developer</span></h3>
+                                    <p> Hi! My name is Upvesh Kumar. I am a Web Developer, and I'm very passionate and dedicated 
+                                        to my work. With 10 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Birthday: <span>10 march 1997</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Age: <span>23</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email: <span>taggz1030@gmail.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone: <span>+7 705 133 90 55</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>City: <span>Aktau</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 70%"></div>
+                                                <div class="skill-percent">70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 50%"></div>
+                                                <div class="skill-percent">50%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Javascript</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 20%"></div>
+                                                <div class="skill-percent">20%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Vue.js</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 10%"></div>
+                                                <div class="skill-percent">10%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padd-15">
+                                <div class="experience">
+                                    <h3 class="experience__title">Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- Timeline item-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h6 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2020-2021
+                                                    </h6>
+                                                    <h4 class="timeline-title">Верстальщик</h4>
+                                                    <p class="timeline-text">
+                                                        Здесь скоро будет какой то текст. Скорее всего с каким то описание с моей проффесией и т.д </p>
+                                                </div>
+                                                <!-- Timeline Item End-->
+                                                 <!-- Timeline item-->
+                                                 <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h6 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2020-2021
+                                                    </h6>
+                                                    <h4 class="timeline-title">Верстальщик</h4>
+                                                    <p class="timeline-text">
+                                                        Здесь скоро будет какой то текст. Скорее всего с каким то описание с моей проффесией и т.д </p>
+                                                </div>
+                                                <!-- Timeline Item End-->
+                                                 <!-- Timeline item-->
+                                                 <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h6 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2020-2021
+                                                    </h6>
+                                                    <h4 class="timeline-title">Верстальщик</h4>
+                                                    <p class="timeline-text">
+                                                        Здесь скоро будет какой то текст. Скорее всего с каким то описание с моей проффесией и т.д </p>
+                                                </div>
+                                                <!-- Timeline Item End-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa laudantium totam quibusdam, in blanditiis odio eos ratione. Animi facilis voluptatibus voluptate nisi quam? Saepe dolore quo minima. Libero, quia.</p>
+            </div>
+        </section>
+        <!-- About Section End -->
+
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Portfolio</h2>
+                    </div>
                 </div>
-            </div>
-            <h1>Affordable Cost</h1>
-            <div class="features-desc">
-                <div class="feature-icon">
-                    <i class="fa fa-inr"></i>
+                <div class="row">
+                    <!--Portfolio item-->
+                    <div class="portfolio-filter padd-15">
+                        <button type="button" class="active" data-filter="all">All</button>
+                    </div>
                 </div>
-                <div class="feature-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa laudantium totam quibusdam, in blanditiis odio eos ratione. Animi facilis voluptatibus voluptate nisi quam? Saepe dolore quo minima. Libero, quia.</p>
+                    <div class="row">
+                        <!--Potfolio item-->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/1.jpg" alt="Portfolio">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Wakeboard</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Potfolio item End-->
+                        <!--Potfolio item-->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/2.jpg" alt="Portfolio">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Wakeboard2</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Potfolio item End-->
+                        <!--Potfolio item-->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/3.jpg" alt="Portfolio">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Wakeboard3</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Potfolio item End-->
+                        <!--Potfolio item-->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/4.jpg" alt="Portfolio">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Wakeboard4</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Potfolio item End-->
+                        <!--Potfolio item-->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/5.jpg" alt="Portfolio">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Wakeboard5</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Potfolio item End-->
+                        <!--Potfolio item-->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/6.jpg" alt="Portfolio">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Wakeboard6</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Potfolio item End-->
+                    </div>
+            </div>
+        </section>
+
+        <!--Contact Section-->
+        <section class="contact section" id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Contact Me</h2>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="features-img">
-            <img src="img/barber-man.jpg" alt="">
-        </div>
-    </div>
-</section>
-
-<!--Service-->
-
-<section id="service">
-    <div class="title-text">
-        <p>SERVICES</p>
-        <h1>We Provide Better</h1>
-    </div>
-    <div class="service-box">
-        <div class="single-service">
-            <img src="img/pic-1.jpg">
-            <div class="overlay"></div>
-            <div class="service-desc">
-                <h3>Hair Styling</h3>
-                <hr>
-                <p>This is test under text koroche of barber-man
-                    this is under desription of barber foundation</p>
-            </div>
-        </div>
-        <div class="single-service">
-            <img src="img/pic-2.jpg">
-            <div class="overlay"></div>
-            <div class="service-desc">
-                <h3>Beard Drim</h3>
-                <hr>
-                <p>This is test under text koroche of barber-man
-                    this is under desription of barber foundation</p>
-            </div>
-        </div>
-        <div class="single-service">
-            <img src="img/pic-3.jpg">
-            <div class="overlay"></div>
-            <div class="service-desc">
-                <h3>Hair Cut</h3>
-                <hr>
-                <p>This is test under text koroche of barber-man
-                    this is under desription of barber foundation</p>
-            </div>
-        </div>
-        <div class="single-service">
-            <img src="img/pic-4.jpg">
-            <div class="overlay"></div>
-            <div class="service-desc">
-                <h3>Dry Shapoo</h3>
-                <hr>
-                <p>This is test under text koroche of barber-man
-                    this is under desription of barber foundation</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--Testimonial-->
-
-<section id="testimonial">
-    <div class="title-text">
-        <p>TESTIMONIAL</p>
-        <h1>What Client Says</h1>
-    </div>
-    <div class="testimonial-row">
-        <div class="testimonial-col">
-            <div class="user">
-                <img src="img/img-1.jpg">
-                <div class="user-info">
-                    <h4>KEN NORMAN<i class="fa fa-twitter"></i></h4>
-                    <small>@kennorman</small>
+                <div class="row">
+                    <!--Contact info item-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Call Us On</h4>
+                        <p>+7 705 133 90 55</p>
+                    </div>
+                    <!--Contact info item end-->
+                     <!--Contact info item-->
+                     <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-map-marker"></i></div>
+                        <h4>Office</h4>
+                        <p>+7 705 133 90 55</p>
+                    </div>
+                    <!--Contact info item end-->
+                     <!--Contact info item-->
+                     <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>taggz1030@gmail.com</p>
+                    </div>
+                    <!--Contact info item end-->
                 </div>
-            </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit temporibus libero rem recusandae odit inventore eligendi obcaecati aut! Ratione incidunt, eveniet consectetur porro cupiditate provident. Exercitationem, porro. Minima, rem perspiciatis?</p>
-        </div>
-        <div class="testimonial-col">
-            <div class="user">
-                <img src="img/img-2.jpg">
-                <div class="user-info">
-                    <h4>LIARA KARIAN<i class="fa fa-twitter"></i></h4>
-                    <small>@liarakarian</small>
+                <!--Contact form-->
+                <div class="row">
+                    <form action="" class="contact-form padd-15">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 padd-15">
+                                <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
+                <!--Contact form End-->
+
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur  rem recusandae odit inventore eligendi obcaecati aut! Ratione incidunt, eveniet consectetur porro cupiditate provident. Exercitationem, porro. Minima, rem perspiciatis?</p>
-        </div>
-        <div class="testimonial-col">
-            <div class="user">
-                <img src="img/img-3.jpg">
-                <div class="user-info">
-                    <h4>RICKY DANIAL<i class="fa fa-twitter"></i></h4>
-                    <small>@rickydanial</small>
-                </div>
-            </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit temporibus libero rem recusandae odit inventore eligendi obcaecati aut! Ratione incidunt, eveniet consectetur porro cupiditate provident. Exercitationem, porro. Minima, rem perspiciatis?</p>
-        </div>
-    </div>
-</section>
+        </section>        
 
-<!--Footer-->
 
-<section id="footer">
-    <img src="img/footer-img.png" class="footer-img">
-    <div class="title-text">
-        <p>CONTACTS</p>
-        <h1>Visit Shop Today</h1>
+
+        <!--Contact Section End-->
     </div>
-    <div class="footer-row">
-        <div class="footer-left">
-            <h1>Opening Hours</h1>
-            <p><i class="fa fa-clock-o"></i>Monday to Friday - 9am to 9pm</p>
-            <p><i class="fa fa-clock-o"></i>Saturday and Sanday - 8am to 11pm</p>
-        </div>
-        <div class="footer-right">
-            <h1>Get In Touch</h1>
-            <p>#30 abc Colony, xyz City IN<i class="fa fa-map-marker"></i></p>
-            <p>example@website.com<i class="fa fa-paper-plane"></i></p>
-            <p>+7 777 777 77 77<i class="fa fa-phone"></i></p>
+</div>
+
+<div class="lightbox">
+    <div class="lightbox-content">
+        <div class="lightbox-close">&times;</div>
+        <img src="images/portfolio/2.jpg" alt="" class="lightbox-img">
+        <div class="lightbox-caption">
+            <div class="caption-text"></div>
+            <div class="caption-counter"></div>
         </div>
     </div>
-    <div class="social-links">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-youtube-play"></i>
-
+    <div class="lightbox-controls">
+        <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+        <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
     </div>
-</section>
+</div>
 
-<script>
-var sidenav = document.getElementById("sidenav")
+<!--Style Switcher-->
 
-function toggleMenu() {
-   var isClosed = sidenav.style.right === "-250px";
-    if(isClosed) {
-        open()
-    }
-    else{
-        closeTab()
-    }
-}
+<div class="style-switcher">
+    <div class="toggle-style-switcher">
+        <i class="fa fa-cog fa-spin"></i>
+    </div>
+    <h5>Style Switcher</h5>
+    <ul>
+        <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839" onclick="setActiveStyle('pink')"></a></li>
+        <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3" onclick="setActiveStyle('blue')"></a></li>
+        <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f" onclick="setActiveStyle('orange')"></a></li>
+        <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400" onclick="setActiveStyle('yellow')"></a></li>
+        <li><a href="javascript:void(0);" title="green" style="background-color: #72b626" onclick="setActiveStyle('green')"></a></li>
+    </ul>
+</div>
 
-function open () {
-        sidenav.style.right = "0";
-        menu.src = "img/close.png";
-}
 
-function closeTab () {
-        sidenav.style.right = "-250px";
-        menu.src = "img/menu.png";
-}
 
-var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 1000,
-	speedAsDuration: true
-});
-</script>
-
+<script src="js/script.js"></script>
+<script src="js/styleSwitcher.js"></script>
 </body>
 </html>
+
