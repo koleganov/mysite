@@ -223,7 +223,7 @@ input, textarea, select {
 }
 
  .aside .nav {
-     margin: 80px 0;
+     margin: 200px 0;
      padding: 0;
      list-style: none;
  }
@@ -851,5 +851,8 @@ input, textarea, select {
     .portfolio .portfolio-item {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .about .about-content .personal-info .info-item p span {
+        font-size: 14px;
     }
 }
