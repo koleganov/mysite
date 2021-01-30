@@ -254,6 +254,9 @@ input, textarea, select {
  }
 
  .aside .copyright-text {
+     position: absolute;
+     bottom: 0;
+     margin-bottom: 20px;
      font-size: 13px;
      color: #7d7d7d;
  }
@@ -355,6 +358,13 @@ input, textarea, select {
     flex: 0 0 40%;
     max-width: 40%;
     margin-top: 50px;
+}
+
+.about .about-content .skills .skills-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #302e4d;
+    margin-bottom: 20px;
 }
 
 .about .about-content .skills .skill-item {
@@ -797,12 +807,14 @@ input, textarea, select {
     }
 
     .aside .nav-toggler {
+        top: 23px;
         display: flex;
         left: 30px;
     }
 
     .aside .nav-toggler.open {
-        left: 300px;
+        top: 23px;
+        left: 200px;
     }
 
     .aside {
