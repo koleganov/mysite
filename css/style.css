@@ -47,35 +47,6 @@ input, textarea, select {
     min-height: 100vh;
     display: block;
     padding: 0 30px;
-    position: fixed;
-    left: 270px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    opacity: 1;
-    overflow-x: hidden;
-    overflow-y: auto;
-    transition: all 0.3s ease;
-}
-
-.section.back-section {
-    z-index: 1;
-}
-
-.section.active {
-    opacity: 1;
-    z-index: 2;
-    animation: slideSection 1s ease;
-}
-
-@keyframes slideSection {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
 }
 
 .section .container {
@@ -132,6 +103,10 @@ input, textarea, select {
     padding-right: 15px;
     padding-left: 15px;
 
+}
+
+.main-content {
+    padding-left: 270px;
 }
 
 
@@ -264,16 +239,25 @@ input, textarea, select {
 
  /* Home Section */
 
+
  .home {
      min-height: 100vh;
      display: flex;
      display: -ms-flexbox;
+ }
+ .intro {
+     position: relative;
  }
 
  .home .intro {
      text-align: center;
  }
 
+ .home .intro .btn-scroll {
+    position: absolute;
+    margin: 80px -13px;
+    padding: 10px 20px;
+ }
  .home .intro img {
      width: 200px;
      height: 200px;
@@ -802,6 +786,10 @@ input, textarea, select {
 /* Responsive */
 
 @media (max-width: 1199px) {
+
+    .main-content {
+        padding-left: 0;
+    }
     .section .container {
         padding-top: 70px;
     }
@@ -846,6 +834,24 @@ input, textarea, select {
         max-width: 50%;
     }
     
+}
+
+@media (max-height: 415px) {
+    .aside .nav {
+        margin: 70px 0;
+    }
+}
+
+@media (max-height: 380px) {
+    .aside .nav {
+        margin: 70px 0;
+    }
+}
+
+@media (max-height: 325px) {
+    .aside .nav {
+        margin: 40px 0;
+    }
 }
 
 @media (max-width: 767px) {

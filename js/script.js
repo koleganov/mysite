@@ -75,22 +75,11 @@ for (i = 0; i < totalNavlist; i++) {
         }
 
         this.classList.add('active');
-        showSection(this);
-
-        if (window.innerWidth < 1200) {
-            asideSectionTogglerbtn();
-        }
+        
     })
 }
 
-function showSection(element) {
-    for (let i = 0; i < totalSection; i++) {
-        allSection[i].classList.remove('active');
-    }
-    const target = element.getAttribute('href').split('#')[1];
-    
-    document.querySelector('#'+target).classList.add('active')
-}
+
 
 
 const navTogglerBtn = document.querySelector('.nav-toggler');
@@ -108,3 +97,20 @@ function asideSectionTogglerbtn () {
         allSection[i].classList.toggle('open');
     }
 }
+
+// function scrollTo (element) {
+//     window.scroll ({
+//         left: 0,
+//         top: 750,
+//         behavior: 'smooth'
+//     });
+// }
+
+// let btnScroll = document.querySelector('.btn-scroll');
+// let about = document.getElementById('#about');
+
+// btnScroll.addEventListener('click', () => {
+//     scrollTo(about);
+// })
+
+
