@@ -102,7 +102,7 @@ body {
 @media only screen and (max-width: 735px) {
 
     .quiz {
-        width: 400px;
+        width: 384px;
     }
 
     .quiz-questions-item__question {
@@ -132,7 +132,6 @@ body {
     .quiz-results-item__question {
         font-weight: 700;
         margin-left: 10px;
-        margin-right: 10px;
         font-size: 20px;
         width: 370px;
     }
@@ -142,4 +141,15 @@ body {
         margin-left: 10px;
     }
 
+}
+
+@media only screen and (max-width: 390px) {
+
+    .quiz-questions-item__question {
+        font-weight: 700;
+        margin-left: 10px;
+        font-size: 20px;
+        width: 375px;
+        
+    }
 }
