@@ -103,7 +103,7 @@ const DATA = [
             },
         ]
     },
-    // // пятый вопрос
+    // пятый вопрос
     {
         questions: 'Работники не прошедшие обучение, проверку знаний и инструктаж по БиОТ к работе _____:',
         answers: [
@@ -1343,6 +1343,303 @@ const DATA = [
             
         ]
     },
+    // 51 вопрос
+    {
+        questions: 'Процедура заключения трудового договора',
+        answers: [
+            {
+                id: '200',
+                value: 'Избрание по конкурсу на замещение соответствующей должности',
+                correct: false,
+            },
+            {
+                id: '201',
+                value: 'Все перечисленное',
+                correct: true,
+            },
+            {
+                id: '202',
+                value: 'Назначение на должность или утверждение в должности',
+                correct: false,
+            },
+            {
+                id: '203',
+                value: 'Вынесение судебного решения о заключении трудового договора',
+                correct: false,
+            },
+            
+        ]
+    },
+    // 52 вопрос
+    {
+        questions: 'Комплекс санитарно-профилактических условий на производстве называются',
+        answers: [
+            {
+                id: '204',
+                value: 'Гигиена труда',
+                correct: true,
+            },
+            {
+                id: '205',
+                value: 'Аттестация производственных объектов по условиям труда',
+                correct: false,
+            },
+            {
+                id: '206',
+                value: 'Мониторинг безопасности и охраны труда',
+                correct: false,
+            },
+            {
+                id: '207',
+                value: 'Охрана труда',
+                correct: false,
+            },
+            
+        ]
+    },
+    // 53 вопрос
+    {
+        questions: 'Как оформляется прекращение трудового договора по трудовому кодексу',
+        answers: [
+            {
+                id: '208',
+                value: 'Может быть передано работнику через руководителя работ',
+                correct: false,
+            },
+            {
+                id: '209',
+                value: 'Может быть передано работнику устно без указания основания прекращения договора',
+                correct: false,
+            },
+            {
+                id: '210',
+                value: 'Оформляется работодателем письменно с указанием основания прекращения договора',
+                correct: true,
+            },
+            {
+                id: '211',
+                value: 'Оформляется работодателем письменно без указания основания прекращения договора',
+                correct: false,
+            },
+            
+        ]
+    },
+    // 54 вопрос
+    {
+        questions: 'Какой вид дисциплинарного взыскания, работодатель не вправе применять работнику',
+        answers: [
+            {
+                id: '212',
+                value: 'Расторжение трудового договора',
+                correct: false,
+            },
+            {
+                id: '213',
+                value: 'Лишения части заработной платы',
+                correct: true,
+            },
+            {
+                id: '214',
+                value: 'Строгий выговор',
+                correct: false,
+            },
+            {
+                id: '215',
+                value: 'Выговор',
+                correct: false,
+            },
+            
+        ]
+    },
+    // 55 вопрос
+    {
+        questions: 'Основаниями прекращения трудового договора не являются',
+        answers: [
+            {
+                id: '216',
+                value: 'Расторжение трудового договора по инициативе работодателя или работника',
+                correct: false,
+            },
+            {
+                id: '217',
+                value: 'Расторжение трудового договора по требованию уполномоченного органа по охране труда',
+                correct: true,
+            },
+            {
+                id: '218',
+                value: 'Истечение срока трудового договора',
+                correct: false,
+            },
+            {
+                id: '219',
+                value: 'Расторжение трудового договора по соглашению сторон',
+                correct: false,
+            },
+            
+        ]
+    },
+    // 56 вопрос
+    {
+        questions: 'Что такое производственная травма',
+        answers: [
+            {
+                id: '220',
+                value: 'Всё перечисленное',
+                correct: false,
+            },
+            {
+                id: '221',
+                value: 'Любая травма, полученная при нахождении работника на производстве',
+                correct: false,
+            },
+            {
+                id: '222',
+                value: 'Повреждение здоровья работника, полученное во время междусменного перерыва',
+                correct: false,
+            },
+            {
+                id: '223',
+                value: 'Повреждение здоровья работника, полученное при исполнении им трудовых обязанностей, приведшее к утрате трудоспособности',
+                correct: true,
+            },
+            
+        ]
+    },
+    // 57 вопрос
+    {
+        questions: 'Какого инструктажа не существует',
+        answers: [
+            {
+                id: '224',
+                value: 'Вводный',
+                correct: false,
+            },
+            {
+                id: '225',
+                value: 'Разовый',
+                correct: true,
+            },
+            {
+                id: '226',
+                value: 'Первичный',
+                correct: false,
+            },
+            {
+                id: '227',
+                value: 'Внеплановый',
+                correct: false,
+            },
+            
+        ]
+    },
+    // 58 вопрос
+    {
+        questions: 'Вид инструктажа: при введении новых стандартов, правил, инструкций по безопасности и охране труда, а также при изменениях и дополнений',
+        answers: [
+            {
+                id: '228',
+                value: 'Вводный инструктаж',
+                correct: false,
+            },
+            {
+                id: '229',
+                value: 'Внеплановый инструктаж',
+                correct: true,
+            },
+            {
+                id: '230',
+                value: 'Первичный инструктаж на рабочем месте',
+                correct: false,
+            },
+            {
+                id: '231',
+                value: 'Целевой',
+                correct: false,
+            },
+            
+        ]
+    },
+    // 59 вопрос
+    {
+        questions: 'Система санитарно-гигиенических мероприятий',
+        answers: [
+            {
+                id: '232',
+                value: 'Производственная санитария',
+                correct: true,
+            },
+            {
+                id: '233',
+                value: 'Аттестация производственных объектов по условиям труда',
+                correct: false,
+            },
+            {
+                id: '234',
+                value: 'Гигиена труда',
+                correct: false,
+            },
+            {
+                id: '235',
+                value: 'Охрана окружающей среды',
+                correct: false,
+            },
+            
+        ]
+    },
+    // 60 вопрос
+    {
+        questions: 'Оценка производственных объектов по условиям труда',
+        answers: [
+            {
+                id: '236',
+                value: ' Гигиена труда',
+                correct: false,
+            },
+            {
+                id: '237',
+                value: 'Аттестация производственных объектов по условиям труда',
+                correct: true,
+            },
+            {
+                id: '238',
+                value: 'Производственная санитария',
+                correct: false,
+            },
+            {
+                id: '239',
+                value: 'Охрана окружающей среды',
+                correct: false,
+            },
+            
+        ]
+    },
+    // 61 вопрос
+    {
+        questions: 'Вид работ, связанный перемещением тяжестей вручную с физическими усилиями',
+        answers: [
+            {
+                id: '240',
+                value: 'Вредные условия труда',
+                correct: false,
+            },
+            {
+                id: '241',
+                value: 'Опасные условия труда',
+                correct: false,
+            },
+            {
+                id: '242',
+                value: 'Вредные и опасные условия труда',
+                correct: false,
+            },
+            {
+                id: '243',
+                value: 'Тяжелые работы',
+                correct: true,
+            },
+            
+        ]
+    },
 ];
 
 let localResults = {};
@@ -1380,12 +1677,15 @@ const renderQustions = (index) => {
 }
 const renderResults = () => {
     let content = '';
+    let incorrectAnswersNumber = 0;
 
     const getClassname = (answer, questionIndex) => {
         let classname = '';
+        
 
         if(!answer.correct && answer.id === localResults[questionIndex]) {
             classname = 'answer--invalid';
+            incorrectAnswersNumber++;
         } else if (answer.correct) {
             classname = 'answer--valid';
         }
@@ -1406,12 +1706,13 @@ const renderResults = () => {
         `;
         
     })
-
+    
+    content += `
+    <div class="quiz-show">Ваш результат: ${DATA.length - incorrectAnswersNumber}/${DATA.length}</div>
+`;
     results.innerHTML = content;
 
 }
-
-
 
 const renderIndicator = (currentStep) => {
     indicator.innerHTML = `${currentStep}/${DATA.length}`;
@@ -1428,6 +1729,7 @@ quiz.addEventListener('change', (event) => {
 quiz.addEventListener('click', (event) => {
     //вперед или сначала
     if(event.target.classList.contains('btn-next')) {
+
         const nextQuestionIndex = Number(questions.dataset.currentStep) + 1;
 
         if(DATA.length === nextQuestionIndex) {

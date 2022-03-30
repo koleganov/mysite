@@ -58,9 +58,18 @@ body {
 .quiz-results {
     display: none;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
+    position: relative;
 }
 
+.quiz-show {
+    font-weight: 700;
+    top: -31px;
+    position: absolute;
+    left: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+}
 .quiz-controls {
     margin-bottom: 20px;
 }
@@ -125,6 +134,10 @@ body {
     .quiz-controls {
         margin-left: 10px;
         margin-bottom: 30px;
+    }
+
+    .quiz-show {
+        left: 120px;
     }
 
 
