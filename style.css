@@ -18,6 +18,7 @@ body {
 }
 
 .quiz-questions-item__question {
+    font-weight: 700;
     font-size: 20px;
     margin-bottom: 20px;
 }
